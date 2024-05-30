@@ -12,9 +12,34 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
+/* background style */
 .calculator{
-    background: #000;
+    background: #3a89ca;
     padding: 20px;
     border-radius: 10px;
+    border:8px double  rgb(30, 124, 231);
 }
+/* style for all input button  */
+.calculator form input{
+     border: 0;
+     outline: 0;
+     width: 50px;
+     height: 50px;
+     border-radius: 10px;
+     box-shadow: -10px -10px 16px rgba(219, 226, 231, 0.1);
+     background: transparent;
+     color: #fff;
+     cursor: pointer;
+     margin: 10px;
+     transition: all 0.2s ease;
+     font-size: larger;
+}
+
+/* button hover effect */
+.calculator form input:hover{
+    box-shadow: 6px 4px 7px  3px #a0c7e2;
+    transform: translateY(3px);
+    border: 2px solid rgb(226, 206, 206);
+} 
