@@ -65,8 +65,44 @@ form .display input:hover{
  box-shadow: none;
  transform:none;
  border:none;
+ background: transparent;
 }
 /* increase the = size */
 form input.equalTab{
     width: 150px;
+}
+
+@media (max-width: 768px) {
+    .calculator {
+        padding: 15px;
+    }
+    .calculator form input {
+        width: 50px;
+        height: 50px;
+        margin: 8px;
+        font-size: 25px;
+    }
+    form .display input{
+        font-size: 40px;
+    }
+    form input.equalTab {
+        width: 120px;
+    }
+}
+@media (max-width: 480px) {
+    .calculator {
+        padding: 10px;
+    }
+    .calculator form input {
+        width: 40px;
+        height: 40px;
+        margin: 5px;
+        font-size: 20px;
+    }
+    form .display input {
+        font-size: 30px;
+    }
+    form input.equalTab {
+        width: 100px;
+    }
 }
