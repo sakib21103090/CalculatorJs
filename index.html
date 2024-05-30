@@ -51,11 +51,15 @@
     </div>
     
     <script>
+        // all calculation in one function 
         function Calculator(newValue){
             document.getElementById("Show").value +=newValue;
          }
-       
-
+        //  click to clear input field
+         function ClearAll(){
+            document.getElementById("Show").value ="";
+        }
+        
 
 
 
