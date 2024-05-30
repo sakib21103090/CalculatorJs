@@ -8,49 +8,50 @@
 </head>
 <body>
     <div class="container">
-         <div class="calculator">
-            <form >
-                <!-- for display result  -->
-                <div class="display">
-                    <input  type="text" id="Show" name="display">
-                </div>
-                <!-- first row for AC,DE,., -->
-                <div>
-                    <input type="button" value="AC" onclick="ClearAll()">
-                    <input type="button" value="DE" onclick="DeleteMe()">
-                    <input type="button" value="."  onclick="Calculator('.')">
-                    <input type="button" value="/"  onclick="Calculator('/')">
-                </div>
-                <div>
-                    <input type="button" value="7" onclick="Calculator('7')">
-                    <input type="button" value="8" onclick="Calculator('8')">
-                    <input type="button" value="9" onclick="Calculator('9')">
-                    <input type="button" value="*" onclick="Calculator('*')">
-                </div>
-                <div>
-                    <input type="button" value="4" onclick="Calculator('4')">
-                    <input type="button" value="5" onclick="Calculator('5')">
-                    <input type="button" value="6" onclick="Calculator('6')">
-                    <input type="button" value="-" onclick="Calculator('-')">
-                </div>
-                <div>
-                    <input type="button" value="1" onclick="Calculator('1')">
-                    <input type="button" value="2" onclick="Calculator('2')">
-                    <input type="button" value="3" onclick="Calculator('3')">
-                    <input type="button" value="+" onclick="Calculator('4')">
-                </div>
-                <div>
-                    <input type="button" value="00" onclick="Calculator('00')">
-                    <input type="button" value="0" onclick="Calculator('0')">
-                    <input  type="button" value="=" class="equalTab" onclick="Answer()">
-                    
-                </div>
-                
-            </form>
-         </div>
-    </div>
-    
+        <div class="calculator">
+           <form >
+               <!-- for display result  -->
+               <div class="display">
+                   <input  type="text" id="Show" name="display">
+               </div>
+               <!-- first row for AC,DE,., -->
+               <div>
+                   <input type="button" value="AC" onclick="ClearAll()">
+                   <input type="button" value="DE" onclick="DeleteMe()">
+                   <input type="button" value="."  onclick="Calculator('.')">
+                   <input type="button" value="/"  onclick="Calculator('/')">
+               </div>
+               <div>
+                   <input type="button" value="7" onclick="Calculator('7')">
+                   <input type="button" value="8" onclick="Calculator('8')">
+                   <input type="button" value="9" onclick="Calculator('9')">
+                   <input type="button" value="*" onclick="Calculator('*')">
+               </div>
+               <div>
+                   <input type="button" value="4" onclick="Calculator('4')">
+                   <input type="button" value="5" onclick="Calculator('5')">
+                   <input type="button" value="6" onclick="Calculator('6')">
+                   <input type="button" value="-" onclick="Calculator('-')">
+               </div>
+               <div>
+                   <input type="button" value="1" onclick="Calculator('1')">
+                   <input type="button" value="2" onclick="Calculator('2')">
+                   <input type="button" value="3" onclick="Calculator('3')">
+                   <input type="button" value="+" onclick="Calculator('+')">
+               </div>
+               <div>
+                   <input type="button" value="00" onclick="Calculator('00')">
+                   <input type="button" value="0" onclick="Calculator('0')">
+                   <input  type="button" value="=" class="equalTab" onclick="Answer()">
+                   
+               </div>
+               
+           </form>
+        </div>
+   </div>
+
     <script>
+    
         // all calculation in one function 
         function Calculator(newValue){
             document.getElementById("Show").value +=newValue;
@@ -60,9 +61,11 @@
             document.getElementById("Show").value ="";
         }
         
-
-
-
+        function Answer(){
+            let a =document.getElementById("Show").value;
+            var b=eval(a);
+            document.getElementById("Show").value=b
+}
     </script>
 </body>
 </html>

@@ -28,7 +28,7 @@
      width: 60px;
      height: 60px;
      border-radius: 10px;
-     box-shadow: -10px -10px 16px rgba(219, 226, 231, 0.1);
+     box-shadow: -10px -10px 16px rgba(11, 12, 13, 0.1);
      background: transparent;
      color: #ffffff;
      cursor: pointer;
@@ -43,6 +43,7 @@
     box-shadow: 6px 4px 7px  3px #a0c7e2;
     transform: translateY(3px);
     border: 2px solid rgb(226, 206, 206);
+    background-color: #092032;
 } 
 
 /* add display style  */
