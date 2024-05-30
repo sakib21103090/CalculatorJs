@@ -17,7 +17,7 @@
                <!-- first row for AC,DE,., -->
                <div>
                    <input type="button" value="AC" onclick="ClearAll()">
-                   <input type="button" value="DE" onclick="DeleteMe()">
+                    <input type="button" value="DE" onclick="display.value=display.value.toString().slice(0,-1)">
                    <input type="button" value="."  onclick="Calculator('.')">
                    <input type="button" value="/"  onclick="Calculator('/')">
                </div>
@@ -60,6 +60,11 @@
          function ClearAll(){
             document.getElementById("Show").value ="";
         }
+        // function DeleteMe(){
+        //    let dValue= document.getElementById("Show");
+        //    dValue.value=dValue.slice(0,-1)
+        // }
+        // calculate with eval function
         
         function Answer(){
             let a =document.getElementById("Show").value;
